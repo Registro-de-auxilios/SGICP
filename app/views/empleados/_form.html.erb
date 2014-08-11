@@ -1,0 +1,85 @@
+<%= form_for(@empleado) do |f| %>
+  <% if @empleado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@empleado.errors.count, "error") %> prohibited this empleado from being saved:</h2>
+
+      <ul>
+      <% @empleado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :docIdentificacion %><br>
+    <%= f.number_field :docIdentificacion %>
+  </div>
+  <div class="field">
+    <%= f.label :estadoCivil %><br>
+    <%= f.text_field :estadoCivil %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad %><br>
+    <%= f.text_field :ciudad %>
+  </div>
+  <div class="field">
+    <%= f.label :barrio %><br>
+    <%= f.text_field :barrio %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.number_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br>
+    <%= f.number_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :correoElectronico %><br>
+    <%= f.text_field :correoElectronico %>
+  </div>
+  <div class="field">
+    <%= f.label :genero %><br>
+    <%= f.check_box :genero %>
+  </div>
+  <div class="field">
+    <%= f.label :estudios %><br>
+    <%= f.text_field :estudios %>
+  </div>
+  <div class="field">
+    <%= f.label :experienciasLaborales %><br>
+    <%= f.text_field :experienciasLaborales %>
+  </div>
+  <div class="field">
+    <%= f.label :fchInicio %><br>
+    <%= f.date_select :fchInicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fchFinal %><br>
+    <%= f.date_select :fchFinal %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br>
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :nomReferencia %><br>
+    <%= f.text_field :nomReferencia %>
+  </div>
+  <div class="field">
+    <%= f.label :telReferencia %><br>
+    <%= f.text_field :telReferencia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

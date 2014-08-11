@@ -1,0 +1,2 @@
+module CategoriasInsumosHelper
+end

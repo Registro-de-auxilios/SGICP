@@ -1,0 +1,57 @@
+<h1>Listing empleados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Docidentificacion</th>
+      <th>Estadocivil</th>
+      <th>Direccion</th>
+      <th>Ciudad</th>
+      <th>Barrio</th>
+      <th>Telefono</th>
+      <th>Celular</th>
+      <th>Correoelectronico</th>
+      <th>Genero</th>
+      <th>Estudios</th>
+      <th>Experienciaslaborales</th>
+      <th>Fchinicio</th>
+      <th>Fchfinal</th>
+      <th>Cargo</th>
+      <th>Nomreferencia</th>
+      <th>Telreferencia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @empleados.each do |empleado| %>
+      <tr>
+        <td><%= empleado.nombre %></td>
+        <td><%= empleado.docIdentificacion %></td>
+        <td><%= empleado.estadoCivil %></td>
+        <td><%= empleado.direccion %></td>
+        <td><%= empleado.ciudad %></td>
+        <td><%= empleado.barrio %></td>
+        <td><%= empleado.telefono %></td>
+        <td><%= empleado.celular %></td>
+        <td><%= empleado.correoElectronico %></td>
+        <td><%= empleado.genero %></td>
+        <td><%= empleado.estudios %></td>
+        <td><%= empleado.experienciasLaborales %></td>
+        <td><%= empleado.fchInicio %></td>
+        <td><%= empleado.fchFinal %></td>
+        <td><%= empleado.cargo %></td>
+        <td><%= empleado.nomReferencia %></td>
+        <td><%= empleado.telReferencia %></td>
+        <td><%= link_to 'Show', empleado %></td>
+        <td><%= link_to 'Edit', edit_empleado_path(empleado) %></td>
+        <td><%= link_to 'Destroy', empleado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Empleado', new_empleado_path %>

@@ -1,0 +1,1 @@
+json.extract! @empleado, :id, :nombre, :docIdentificacion, :estadoCivil, :direccion, :ciudad, :barrio, :telefono, :celular, :correoElectronico, :genero, :estudios, :experienciasLaborales, :fchInicio, :fchFinal, :cargo, :nomReferencia, :telReferencia, :created_at, :updated_at

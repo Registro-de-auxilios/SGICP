@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @facturacion.fecha %>
+</p>
+
+<p>
+  <strong>Fchvencimiento:</strong>
+  <%= @facturacion.fchVencimiento %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @facturacion.cliente %>
+</p>
+
+<p>
+  <strong>Cotizacion:</strong>
+  <%= @facturacion.cotizacion %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @facturacion.descripcion %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @facturacion.cantidad %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @facturacion.precio %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @facturacion.iva %>
+</p>
+
+<p>
+  <strong>Valoriva:</strong>
+  <%= @facturacion.valorIva %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @facturacion.total %>
+</p>
+
+<%= link_to 'Edit', edit_facturacion_path(@facturacion) %> |
+<%= link_to 'Back', facturacions_path %>

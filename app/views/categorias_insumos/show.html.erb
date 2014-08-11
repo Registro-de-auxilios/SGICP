@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Insumos:</strong>
+  <%= @categorias_insumo.insumos %>
+</p>
+
+<p>
+  <strong>Categorias:</strong>
+  <%= @categorias_insumo.categorias %>
+</p>
+
+<%= link_to 'Edit', edit_categorias_insumo_path(@categorias_insumo) %> |
+<%= link_to 'Back', categorias_insumos_path %>

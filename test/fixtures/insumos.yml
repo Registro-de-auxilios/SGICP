@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliente: MyString
+  fch_creacion: 2014-08-06
+  categoria: MyString
+  cantidad: 1
+  precio: 1
+
+two:
+  cliente: MyString
+  fch_creacion: 2014-08-06
+  categoria: MyString
+  cantidad: 1
+  precio: 1

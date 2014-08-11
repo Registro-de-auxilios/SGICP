@@ -1,0 +1,27 @@
+<h1>Listing estado_civil_empleados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Empleados</th>
+      <th>Estado civils</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estado_civil_empleados.each do |estado_civil_empleado| %>
+      <tr>
+        <td><%= estado_civil_empleado.empleados %></td>
+        <td><%= estado_civil_empleado.estado_civils %></td>
+        <td><%= link_to 'Show', estado_civil_empleado %></td>
+        <td><%= link_to 'Edit', edit_estado_civil_empleado_path(estado_civil_empleado) %></td>
+        <td><%= link_to 'Destroy', estado_civil_empleado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estado civil empleado', new_estado_civil_empleado_path %>

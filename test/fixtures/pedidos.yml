@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empresa: MyString
+  cantidad: 1
+  descripcion: MyString
+  fchRealizacion: 2014-07-31
+  plazoEnvio: 2014-07-31
+
+two:
+  empresa: MyString
+  cantidad: 1
+  descripcion: MyString
+  fchRealizacion: 2014-07-31
+  plazoEnvio: 2014-07-31

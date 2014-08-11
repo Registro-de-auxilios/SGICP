@@ -1,0 +1,27 @@
+<h1>Listing estudios_empleados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Empleados</th>
+      <th>Estudios</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estudios_empleados.each do |estudios_empleado| %>
+      <tr>
+        <td><%= estudios_empleado.empleados %></td>
+        <td><%= estudios_empleado.estudios %></td>
+        <td><%= link_to 'Show', estudios_empleado %></td>
+        <td><%= link_to 'Edit', edit_estudios_empleado_path(estudios_empleado) %></td>
+        <td><%= link_to 'Destroy', estudios_empleado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estudios empleado', new_estudios_empleado_path %>
