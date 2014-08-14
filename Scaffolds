@@ -1,0 +1,3 @@
+Scaffolds
+
+rails g scaffold empleados name:string doc:string estado:references direccion:string barrio:string ciudad:string telefono:string celular:string correo:string genero:boolean estudios:string experiencia:string fchinicio:date fchfinal:date cargo:string ref:string telref:string

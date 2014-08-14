@@ -1,4 +1,4 @@
 json.array!(@empleados) do |empleado|
-  json.extract! empleado, :id, :nombre, :docIdentificacion, :estadoCivil, :direccion, :ciudad, :barrio, :telefono, :celular, :correoElectronico, :genero, :estudios, :experienciasLaborales, :fchInicio, :fchFinal, :cargo, :nomReferencia, :telReferencia
+  json.extract! empleado, :id, :name, :doc, :estado_id, :direccion, :barrio, :ciudad, :telefono, :celular, :correo, :genero, :estudios, :experiencia, :fchinicio, :fchfinal, :cargo, :ref, :telref
   json.url empleado_url(empleado, format: :json)
 end

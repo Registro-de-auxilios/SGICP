@@ -1,6 +1,44 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
+  name: MyString
+  doc: MyString
+  estado_id: 
+  direccion: MyString
+  barrio: MyString
+  ciudad: MyString
+  telefono: MyString
+  celular: MyString
+  correo: MyString
+  genero: false
+  estudios: MyString
+  experiencia: MyString
+  fchinicio: 2014-08-13
+  fchfinal: 2014-08-13
+  cargo: MyString
+  ref: MyString
+  telref: MyString
+
+two:
+  name: MyString
+  doc: MyString
+  estado_id: 
+  direccion: MyString
+  barrio: MyString
+  ciudad: MyString
+  telefono: MyString
+  celular: MyString
+  correo: MyString
+  genero: false
+  estudios: MyString
+  experiencia: MyString
+  fchinicio: 2014-08-13
+  fchfinal: 2014-08-13
+  cargo: MyString
+  ref: MyString
+  telref: MyString
+=======
   nombre: MyString
   docIdentificacion: 1
   estadoCivil: MyString
@@ -37,3 +75,4 @@ two:
   cargo: MyString
   nomReferencia: MyString
   telReferencia: MyString
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3

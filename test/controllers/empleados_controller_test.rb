@@ -18,7 +18,11 @@ class EmpleadosControllerTest < ActionController::TestCase
 
   test "should create empleado" do
     assert_difference('Empleado.count') do
+<<<<<<< HEAD
+      post :create, empleado: { barrio: @empleado.barrio, cargo: @empleado.cargo, celular: @empleado.celular, ciudad: @empleado.ciudad, correo: @empleado.correo, direccion: @empleado.direccion, doc: @empleado.doc, estado_id: @empleado.estado_id, estudios: @empleado.estudios, experiencia: @empleado.experiencia, fchfinal: @empleado.fchfinal, fchinicio: @empleado.fchinicio, genero: @empleado.genero, name: @empleado.name, ref: @empleado.ref, telefono: @empleado.telefono, telref: @empleado.telref }
+=======
       post :create, empleado: { barrio: @empleado.barrio, cargo: @empleado.cargo, celular: @empleado.celular, ciudad: @empleado.ciudad, correoElectronico: @empleado.correoElectronico, direccion: @empleado.direccion, docIdentificacion: @empleado.docIdentificacion, estadoCivil: @empleado.estadoCivil, estudios: @empleado.estudios, experienciasLaborales: @empleado.experienciasLaborales, fchFinal: @empleado.fchFinal, fchInicio: @empleado.fchInicio, genero: @empleado.genero, nomReferencia: @empleado.nomReferencia, nombre: @empleado.nombre, telReferencia: @empleado.telReferencia, telefono: @empleado.telefono }
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     end
 
     assert_redirected_to empleado_path(assigns(:empleado))
@@ -35,7 +39,11 @@ class EmpleadosControllerTest < ActionController::TestCase
   end
 
   test "should update empleado" do
+<<<<<<< HEAD
+    patch :update, id: @empleado, empleado: { barrio: @empleado.barrio, cargo: @empleado.cargo, celular: @empleado.celular, ciudad: @empleado.ciudad, correo: @empleado.correo, direccion: @empleado.direccion, doc: @empleado.doc, estado_id: @empleado.estado_id, estudios: @empleado.estudios, experiencia: @empleado.experiencia, fchfinal: @empleado.fchfinal, fchinicio: @empleado.fchinicio, genero: @empleado.genero, name: @empleado.name, ref: @empleado.ref, telefono: @empleado.telefono, telref: @empleado.telref }
+=======
     patch :update, id: @empleado, empleado: { barrio: @empleado.barrio, cargo: @empleado.cargo, celular: @empleado.celular, ciudad: @empleado.ciudad, correoElectronico: @empleado.correoElectronico, direccion: @empleado.direccion, docIdentificacion: @empleado.docIdentificacion, estadoCivil: @empleado.estadoCivil, estudios: @empleado.estudios, experienciasLaborales: @empleado.experienciasLaborales, fchFinal: @empleado.fchFinal, fchInicio: @empleado.fchInicio, genero: @empleado.genero, nomReferencia: @empleado.nomReferencia, nombre: @empleado.nombre, telReferencia: @empleado.telReferencia, telefono: @empleado.telefono }
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     assert_redirected_to empleado_path(assigns(:empleado))
   end
 

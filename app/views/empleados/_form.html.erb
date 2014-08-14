@@ -12,72 +12,72 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :docIdentificacion %><br>
-    <%= f.number_field :docIdentificacion %>
+    <%= f.label :doc %><br>
+    <%= f.text_field :doc %>
   </div>
   <div class="field">
-    <%= f.label :estadoCivil %><br>
-    <%= f.text_field :estadoCivil %>
+    Estado Civil <br>
+    <% f.collection_select :estado_id, EstadoCivil.all, :id, :nombre, class: "form-control", prompt: "Seleccione Estado"%>
   </div>
   <div class="field">
     <%= f.label :direccion %><br>
     <%= f.text_field :direccion %>
   </div>
   <div class="field">
-    <%= f.label :ciudad %><br>
-    <%= f.text_field :ciudad %>
-  </div>
-  <div class="field">
     <%= f.label :barrio %><br>
     <%= f.text_field :barrio %>
   </div>
   <div class="field">
+    <%= f.label :ciudad %><br>
+    <%= f.text_field :ciudad %>
+  </div>
+  <div class="field">
     <%= f.label :telefono %><br>
-    <%= f.number_field :telefono %>
+    <%= f.text_field :telefono %>
   </div>
   <div class="field">
     <%= f.label :celular %><br>
-    <%= f.number_field :celular %>
+    <%= f.text_field :celular %>
   </div>
   <div class="field">
-    <%= f.label :correoElectronico %><br>
-    <%= f.text_field :correoElectronico %>
+    <%= f.label :correo %><br>
+    <%= f.text_field :correo %>
   </div>
   <div class="field">
-    <%= f.label :genero %><br>
-    <%= f.check_box :genero %>
+    Femenino: <%= f.radio_button :genero, true %>
+    Masculino: <%= f.radio_button :genero, false %>
   </div>
   <div class="field">
     <%= f.label :estudios %><br>
     <%= f.text_field :estudios %>
   </div>
   <div class="field">
-    <%= f.label :experienciasLaborales %><br>
-    <%= f.text_field :experienciasLaborales %>
+    <%= f.label :experiencia %><br>
+    <%= f.text_field :experiencia %>
   </div>
   <div class="field">
-    <%= f.label :fchInicio %><br>
-    <%= f.date_select :fchInicio %>
+    <%= f.label :fchinicio %><br>
+    <%= f.date_select :fchinicio %>
   </div>
   <div class="field">
-    <%= f.label :fchFinal %><br>
-    <%= f.date_select :fchFinal %>
+    <%= f.label :fchfinal %><br>
+    <%= f.date_select :fchfinal %>
   </div>
   <div class="field">
     <%= f.label :cargo %><br>
     <%= f.text_field :cargo %>
   </div>
   <div class="field">
-    <%= f.label :nomReferencia %><br>
-    <%= f.text_field :nomReferencia %>
+    <%= f.label :ref %><br>
+    <%= f.text_field :ref %>
   </div>
   <div class="field">
-    <%= f.label :telReferencia %><br>
-    <%= f.text_field :telReferencia %>
+    <%= f.label :telref %><br>
+    <%= f.text_field :telref %>
   </div>
   <div class="actions">
     <%= f.submit %>

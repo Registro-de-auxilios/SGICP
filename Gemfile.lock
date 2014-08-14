@@ -28,7 +28,19 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+<<<<<<< HEAD
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.2.2)
+    coderay (1.1.0)
+=======
+    builder (3.2.2)
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -36,6 +48,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
+<<<<<<< HEAD
+    debug_inspector (0.0.2)
+=======
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     erubis (2.7.0)
     execjs (2.2.1)
     hike (1.2.3)
@@ -55,6 +71,11 @@ GEM
     minitest (5.4.0)
     multi_json (1.10.1)
     polyglot (0.3.5)
+<<<<<<< HEAD
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
+=======
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -68,6 +89,10 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.4)
       sprockets-rails (~> 2.0)
+<<<<<<< HEAD
+    rails_layout (1.0.21)
+=======
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     railties (4.1.4)
       actionpack (= 4.1.4)
       activesupport (= 4.1.4)
@@ -118,10 +143,22 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
+  better_errors
+  binding_of_caller
+  bootstrap-sass
+  coffee-rails (~> 4.0.0)
+  jbuilder (~> 2.0)
+  jquery-rails
+  quiet_assets
+  rails (= 4.1.4)
+  rails_layout
+=======
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.4)
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

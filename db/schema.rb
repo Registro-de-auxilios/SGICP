@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20140813204609) do
+=======
 ActiveRecord::Schema.define(version: 20140807201100) do
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
 
   create_table "categorias", force: true do |t|
     t.string   "nombre"
@@ -43,6 +47,25 @@ ActiveRecord::Schema.define(version: 20140807201100) do
   end
 
   create_table "empleados", force: true do |t|
+<<<<<<< HEAD
+    t.string   "name"
+    t.string   "doc"
+    t.integer  "estado_id"
+    t.string   "direccion"
+    t.string   "barrio"
+    t.string   "ciudad"
+    t.string   "telefono"
+    t.string   "celular"
+    t.string   "correo"
+    t.boolean  "genero"
+    t.string   "estudios"
+    t.string   "experiencia"
+    t.date     "fchinicio"
+    t.date     "fchfinal"
+    t.string   "cargo"
+    t.string   "ref"
+    t.string   "telref"
+=======
     t.string   "nombre"
     t.integer  "docIdentificacion"
     t.string   "estadoCivil"
@@ -60,10 +83,16 @@ ActiveRecord::Schema.define(version: 20140807201100) do
     t.string   "cargo"
     t.string   "nomReferencia"
     t.string   "telReferencia"
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+  add_index "empleados", ["estado_id"], name: "index_empleados_on_estado_id"
+
+=======
+>>>>>>> 039f7f56d668882d5e4e06f15d8bd5c2f0f43cf3
   create_table "estado_civil_empleados", force: true do |t|
     t.integer  "empleados_id"
     t.integer  "estado_civils_id"
